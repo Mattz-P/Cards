@@ -1,0 +1,12 @@
+Name:IJN Inazuma Kai
+ManaCost:U R
+Types:Legendary Creature Kancolle DD Destroyer
+PT:1/2
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDraw | TriggerDescription$ When CARDNAME enters the battlefield, draw a card.
+SVar:TrigDraw:DB$Draw | Defined$ You | NumCards$ 1
+
+S:Mode$ ReduceCost | ValidCard$ Kancolle | Type$ Spell | Activator$ You | Amount$ 1 | Description$ Kancolle spells you cast cost {1} less to cast.
+DeckHints:Type$Kancolle
+
+Oracle:When IJN Inazuma Kai enters the battlefield, draw a card.\nKancolle spells you cast cost {1} less to cast.

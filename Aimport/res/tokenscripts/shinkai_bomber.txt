@@ -1,0 +1,9 @@
+Name:Shinkai Bomber
+ManaCost:no cost
+Types:Creature Shinkai Bomber
+Colors:black
+K:Flying
+K:Haste
+PT:4/1
+K:CARDNAME can't block.
+Oracle: Haste, Flying\nThis creature can't block.

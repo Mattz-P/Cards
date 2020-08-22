@@ -1,0 +1,12 @@
+Name:IJN Yukikaze
+ManaCost:W U
+Types:Creature Kancolle DD Destroyer
+PT:1/2
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDraw | TriggerDescription$ When CARDNAME enters the battlefield, draw a card.
+SVar:TrigDraw:DB$Draw | Defined$ You | NumCards$ 1
+T:Mode$ Phase | Phase$ Upkeep | ValidPlayer$ You | TriggerZones$ Battlefield | Execute$ LuckCounter | TriggerDescription$ At the beginning of your upkeep, put a luck counter on CARDNAME.
+SVar:LuckCounter:DB$ PutCounter | CounterType$ LUCK | CounterNum$ 1 | Defined$ Self
+
+A:AB$ Pump | Cost$ SubCounter<5/LUCK> | ValidTgts$ Creature | TgtPrompt$ Choose target creature | KW$ Indestructible | SpellDescription$ Remove 5 Luck counter: Target creature gains indestructible until end of turn.
+Oracle:When IJN Yukikaze enters the battlefield, draw a card.\nAt the beginning of your upkeep, put a luck counter on IJN Yukikaze.\nRemove 5 Luck counter: Target creature gains indestructible until end of turn.

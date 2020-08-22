@@ -1,0 +1,6 @@
+Name:Commence in Yasen
+ManaCost:1 W B
+Types:Instant
+A:SP$ PumpAll | Cost$ 1 W B | ValidCards$ Creature.YouCtrl | NumAtt$ +3 | NumDef$ +3 | SubAbility$ DBPumpall | SpellDescription$ Creatures you control gets +3/+3 until the end of the turn.
+SVar:DBPumpAll:DB$ PumpAll | ValidCards$ Creature.DD+CL+CA+YouCtrl | KW$ Double Strike | SpellDescription$ Destroyer and Cruiser creatures you control gains double strike until the end of the turn.
+Oracle:Creatures you control gets +3/+3 until the end of the turn. Destroyer and Cruiser creatures you control gains double strike until the end of the turn.

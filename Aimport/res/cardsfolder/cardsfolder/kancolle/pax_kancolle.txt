@@ -1,0 +1,16 @@
+Name:Pax Kancolle
+ManaCost:4 U B R
+Types:Legendary Sorcery Kancolle
+
+A:SP$ ChangeZoneAll | Cost$ 4 U B R | ChangeType$ Creature.nonKancolle | Origin$ Battlefield | Destination$ Hand | SubAbility$ DBChoosecard | SpellDescription$ Return all non-Kancolle creatures to their owner’s hand. Return all creature cards in your graveyard onto the battlefield. Your creature gains haste until the end of the turn.
+
+SVar:DBChoosecard:DB$ ChooseCard | MinAmount$ 0 | Amount$ NumCreatPW | References$ NumCreatPW | ChoiceZone$ Graveyard | Choices$ Creature.Kancolle | ChoiceTitle$ Choose any number of target creature and/or planeswalker cards in graveyards | RememberChosen$ True | SubAbility$ DBDamage | SpellDescription$ Choose any number of target creature and/or planeswalker cards in graveyards. Put them onto the battlefield under your control.
+SVar:DBDamage:DB$ DealDamage | Defined$ You | NumDmg$ 0 | References$ X | SubAbility$ DBChangeZone
+SVar:DBChangeZone:DB$ ChangeZone | Defined$ Remembered | GainControl$ True | Origin$ Graveyard | Destination$ Battlefield | SubAbility$ DBCleanup
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True | SubAbility$ DBPump
+SVar:NumCreatPW:Count$ValidGraveyard Creature.Kancolle
+SVar:X:Remembered$SumCMC
+AI:RemoveDeck:All
+SVar:DBPump:DB$ PumpAll | ValidCards$ Creature.YouCtrl | KW$ Haste
+
+Oracle:Return all non-Kancolle creatures to their owner’s hand. Return all creature cards in your graveyard onto the battlefield. Your creature gains haste until the end of the turn.

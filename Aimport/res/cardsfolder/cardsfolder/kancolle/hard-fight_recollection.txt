@@ -1,0 +1,11 @@
+Name:Hard-Fight Recollection
+ManaCost:1 U B
+Types:Enchantment
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDealDamage | TriggerDescription$ When CARDNAME enters the battlefield, it deals 2 damage to you.
+SVar:TrigDealDamage:DB$DealDamage | Defined$ You | NumDmg$ 3
+
+T:Mode$ DamageDone | ValidSource$ Creature.YouCtrl | ValidTarget$ Player | CombatDamage$ True | OptionalDecider$ You | TriggerZones$ Battlefield | Execute$ TrigDraw | TriggerDescription$ Whenever a creature you control deals combat damage to a player, you may draw a card.
+SVar:TrigDraw:DB$ Draw | Defined$ You | NumCards$ 1
+
+Oracle:When Hard-fight Recollection enters the battlefield, it deals 2 damage to you.\nWhenever a creature you control deals combat damage to a player, you may draw a card.

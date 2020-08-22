@@ -1,0 +1,8 @@
+Name:Capsizing
+ManaCost:B R
+Types:Sorcery
+A:SP$ Destroy | Cost$ B R | ValidTgts$ Creature.withoutFlying | SubAbility$ DBDraw | TgtPrompt$ Select target creature without flying | SpellDescription$ Destroy target creature without flying.
+SVar:DBDraw:DB$Draw | NumCards$ 1 | ValidTgts$ Player | TgtPrompt$ Choose a player | SubAbility$ DBLoseLife | SpellDescription$ Target player draws a cards and loses 2 life.
+SVar:DBLoseLife:DB$LoseLife | LifeAmount$ 2 | Defined$ Targeted
+
+Oracle:Destroy target creature without flying. Target player draws a card and loses 2 life.

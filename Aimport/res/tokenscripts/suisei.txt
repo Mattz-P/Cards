@@ -1,0 +1,9 @@
+Name:Suisei
+ManaCost:no cost
+Types:Creature Kancolle Bomber
+Colors:red
+K:Flying
+K:Haste
+PT:3/3
+K:CARDNAME can't block.
+Oracle: Haste, Flying\nThis creature can't block.

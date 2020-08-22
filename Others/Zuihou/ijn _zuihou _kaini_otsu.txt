@@ -1,0 +1,10 @@
+Name:IJN Zuihou Kaini Otsu
+ManaCost:2 W R
+Types:Legendary Creature KanColle LCarrier
+PT:3/5
+K:Defender
+K:Reach
+A:AB$ Token | Cost$ R | TokenAmount$ 1 | TokenScript$ suisei | TokenOwner$ You | LegacyImage$ suisei | SpellDescription$ Create a 3/3 flying Bomber Creature token with flying and “Bomber can’t block”.
+A:AB$ Token | Cost$ U | TokenAmount$ 1 | TokenScript$ fighter | TokenOwner$ You | LegacyImage$ fighter | SpellDescription$ Create a 1/3 flying Fighter Creature token with flying and “{T}: Fighter deals 3 damage to target creature with flying.”. 
+A:AB$ Destroy | Cost$ W U R T | ValidTgts$ Permanent | TgtPrompt$ Select target permanent . | SpellDescription$ Destroy target permanent.
+Oracle:Defender, Reach\n{T}, Destroy target permanent.\n{R}, Create a 3/3 flying Bomber Creature token with flying and “Bomber can’t block”.\n{U}, Create a 1/3 flying Fighter Creature token with flying and “{T}: Fighter deals 3 damage to target creature with flying”. \n{W}{U}{R}, {T}, Destroy target permanent.

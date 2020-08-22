@@ -1,0 +1,8 @@
+Name:Harukaze's Blessing
+ManaCost:R W
+Types:Instant
+A:SP$ Draw | Cost$ R W Discard<1/Card> | Defined$ You | NumCards$ 2 | SubAbility$ DBPumpAll | SpellDescription$ Draw two cards.
+SVar:DBPumpAll:DB$ PumpAll | ValidCards$ Creature.YouCtrl | KW$ Indestructible | SpellDescription$ Creatures you control gain indestructible until end of turn.
+DeckHas:Ability$Discard
+DeckHints:Keyword$Madness & Ability$Delirium
+Oracle:As an additional cost to cast this spell, discard a card. Draw 2 cards. Creatures you control gain indestructible until the end of turn

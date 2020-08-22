@@ -1,0 +1,14 @@
+Name:IJN Hibiki Kai
+ManaCost:W U
+Types:Legendary Creature Kancolle DD Destroyer
+PT:1/2
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDraw | TriggerDescription$ When CARDNAME enters the battlefield, draw a card.
+SVar:TrigDraw:DB$Draw | Defined$ You | NumCards$ 1
+
+T:Mode$ SpellCast | ValidCard$ Card.nonCreature | ValidActivatingPlayer$ You | TriggerZones$ Battlefield | Execute$ TrigToken | TriggerDescription$ Whenever you cast an noncreature spell, create a 1/1 blue Destroyer creature token with “T, Exert Destroyer: Torpedo 1”
+SVar:TrigToken:DB$Token | TokenAmount$ 1 | TokenScript$ u_1_1_destroyer | LegacyImage$ u 1 1 destroyer | TokenOwner$ You
+
+DeckHas:Ability$Token
+
+Oracle:When IJN Inazuma Kai enters the battlefield, draw a card.\nWhenever you cast an noncreature spell, create a 1/1 blue Destroyer creature token with “T, Exert Destroyer: Torpedo 1”

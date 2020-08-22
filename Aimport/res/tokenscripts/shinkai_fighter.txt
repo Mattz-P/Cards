@@ -1,0 +1,8 @@
+Name:Shinkai Fighter
+ManaCost:no cost
+Types:Creature Shinkai Fighter
+Colors:black
+K:Flying
+PT:2/3
+A:AB$ DealDamage | Cost$ T | ValidTgts$ Creature.withFlying | NumDmg$ 4 | SpellDescription$ CARDNAME deals 4 damage to target creature with flying.
+Oracle: Haste, Flying\n{T}: Fighter deals 4 damage to target creature with flying.

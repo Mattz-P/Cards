@@ -1,0 +1,6 @@
+Name:Enthusiastic Invitation
+ManaCost:1 U U U
+Types:Sorcery
+A:SP$ GainControl | Cost$ 1 U U U | ValidTgts$ Creature.nonBlack+nonArtifact+tapped | TgtPrompt$Select target tapped nonartifact, nonblack creature | SpellDescription$ Gain control of target nonblack, nonartifact creature.
+AI:RemoveDeck:All
+Oracle:Gain control of target tapped nonartifact, nonblack creature.

@@ -1,0 +1,6 @@
+Name:Pacify
+ManaCost:G G
+Types:Enchantment
+S:Mode$ Continuous | Affected$ Creature | AddHiddenKeyword$ CARDNAME can't attack. | Description$ All creatures can’t attack.
+A:AB$ Animate | Cost$ 2 | Defined$ Self | RemoveAllAbilities$ True | Activator$ Player | AILogic$ Curse | SpellDescription$ CARDNAME loses all abilities until end of turn. Any player may activate this ability.
+Oracle:All creatures can’t attack.\n{3}: Pacify loses all abilities until end of turn. Any player may activate this ability.

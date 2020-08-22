@@ -1,0 +1,15 @@
+Name:KMS Bismarck
+ManaCost:2 W B R
+Types:Legendary Enchantment Creature Kancolle BB
+PT:7/8
+K:Menace
+K:Haste
+S:Mode$ Continuous | Affected$ Card.Self | RemoveType$ Creature | CheckSVar$ X | SVarCompare$ LT7 | References$ X | Description$ As long as your devotion to green and white is less than seven, CARDNAME isn't a creature.
+SVar:X:Count$Devotion.White+Black+Red
+
+S:Mode$ Continuous | Affected$ Creature.YouCtrl | AddPower$ 2 | AddToughness$ 2 | Description$ Creatures you control get +2/+2.
+
+A:AB$ Draw | Cost$ PayLife<2> | NumCards$ 1 | SpellDescription$ Draw a card.
+
+SVar:BuffedBy:Permanent.White,Permanent.Black,Permanent.Green
+Oracle:Menace, haste\nCreatures you control get +2/+2.\nPay 2 life: Draw a card.\nAs long as your devotion to white, black, and red is less than seven, KMS Bismarck isn’t a creature. (Each W, B, and R is less than seven, KMS Bismarck isn’t a creature in the mana costs of permanents you control counts toward your devotion to white, black, and red is less than seven, KMS Bismarck isn’t a creature.)

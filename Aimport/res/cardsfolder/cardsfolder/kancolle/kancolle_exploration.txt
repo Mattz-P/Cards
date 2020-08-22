@@ -1,0 +1,9 @@
+Name:Kancolle Exploration
+ManaCost:1 G U
+Types:Sorcery
+A:SP$ Effect | Cost$ 1 G U | Name$ Explore Effect | StaticAbilities$ Exploration | AILogic$ Always | SubAbility$ DBDraw | SpellDescription$ You may play an additional land this turn. Draw two card.
+SVar:Exploration:Mode$ Continuous | Affected$ You | AdjustLandPlays$ 1 | EffectZone$ Command | Description$ You may play an additional land this turn.
+SVar:NeedsToPlayVar:ZZ GE1
+SVar:ZZ:Count$ValidHand Land.YouOwn
+SVar:DBDraw:DB$ Draw | Defined$ You | NumCards$ 2
+Oracle:You may play an additional land this turn.\nDraw two card.

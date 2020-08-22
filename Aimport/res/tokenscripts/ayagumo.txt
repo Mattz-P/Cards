@@ -1,0 +1,9 @@
+Name:Ayagumo
+ManaCost:no cost
+Types:Creature Kancolle Scout
+Colors:white
+K:Flying
+K:Echo:1
+PT:0/1 
+A:SP$ Tap | Cost$ T Sac<1/CARDNAME> | ValidTgts$ Creature | SpellDescription$ Tap target creature.
+Oracle: Echo {1}\nFlying\n{T}, Sacrifice Ayagumo: Tap target creature.

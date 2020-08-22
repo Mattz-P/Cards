@@ -1,0 +1,13 @@
+Name:IJN Taiho Kai
+ManaCost:2 R W U
+Types:Legendary Creature Kancolle CV Carrier
+PT:3/5
+K:Reach
+
+A:AB$ Token | Cost$ R | TokenAmount$ 1 | TokenScript$ shiden | TokenOwner$ You | LegacyImage$ shiden | SpellDescription$ Create a 1/2 flying Shiden Creature token with flying and “{T}: Fighter deals 3 damage to target creature with flying” and echo 1.
+
+A:AB$ Token | Cost$ U U | TokenAmount$ 1 | TokenScript$ ryuusei | TokenOwner$ You | LegacyImage$ ryuusei | SpellDescription$ Create a 0/3 flying Ryuusei Creature token with flying and “{T}, Exert Destroyer: Torpedo 1.” and echo 1.”
+
+A:AB$ Token | Cost$ W | TokenAmount$ 1 | TokenScript$ ayagumo | TokenOwner$ You | LegacyImage$ ayagumo | SpellDescription$ Create a 0/1 white Scout token Creature with flying and “{T}, Sacrifice Scout: Tap target creature.”
+
+Oracle:Reach\n{U}: Create a 1/4 flying Shiden Creature token with flying and “{T}: Fighter deals 3 damage to target creature with flying” and echo 1.”\n{U}{U}: Create a 0/3 flying Ryuusei Creature token with flying and “T, Exert Destroyer: Torpedo 2.” and echo 1.”\n{W}: Create a 0/1 white Scout token Creature with flying and “T, Sacrifice Scout: Tap target creature.”

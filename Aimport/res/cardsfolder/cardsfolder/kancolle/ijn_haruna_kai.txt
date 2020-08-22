@@ -1,0 +1,13 @@
+Name:IJN Haruna Kai
+ManaCost:1 R R W W
+Types:Legendary Creature Kancolle BB Battleship
+PT:5/6
+K:Lifelink
+K:Vigilance
+K:Haste
+
+T:Mode$ Phase | Phase$ End of Turn | ValidPlayer$ You | TriggerZones$ Battlefield | Execute$ TrigGainLife | TriggerDescription$ At the beginning of each of your end step, you gain 2 life.
+SVar:TrigGainLife:DB$ GainLife | Defined$ You | LifeAmount$ 2
+DeckHas:Ability$LifeGain
+
+Oracle: Lifelink, Vigilance, Haste\nAt the beginning of each of your end step, you gain 2 life.

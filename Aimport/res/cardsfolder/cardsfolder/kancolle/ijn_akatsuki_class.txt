@@ -1,0 +1,13 @@
+Name:IJN Akatsuki Class
+ManaCost:1 U
+Types:Creature Kancolle DD Destroyer
+PT:1/2
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigScry | TriggerDescription$ When CARDNAME enters the battlefield, scry 1.
+SVar:TrigScry:DB$ Scry | ScryNum$ 1 | SubAbility$ DBDraw
+SVar:DBDraw:DB$ Draw | Defined$ You | NumCards$ 1
+
+T:Mode$ Untaps | ValidCard$ Card.Self | TriggerZones$ Battlefield | Execute$ TrigDraw1 | TriggerDescription$ Whenever CARDNAME becomes untapped, you may pay {2}. If you do, draw a card.
+SVar:TrigDraw1:AB$ Draw | Cost$ 2 U | Defined$ You | NumCards$ 1
+
+Oracle:When IJN Akatsuki Class enters the battlefield, Scry 1, then Draw a card. (To scry 1, look at the top card of your library. You may put that card on the bottom of your library.)\nWhenever IJN Akatsuki Class becomes untapped, you may pay {2}{U}. If you do, draw a card.

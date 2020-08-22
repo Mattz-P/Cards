@@ -1,0 +1,7 @@
+Name:Shiun
+ManaCost:no cost
+Types:Artifact Creature Kancolle Scout
+Colors:Colorless
+K:Flying
+PT:2/1 
+Oracle: Flying

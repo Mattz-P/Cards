@@ -1,0 +1,12 @@
+Name:Air-strike Support
+ManaCost:R G W U
+Types:Instant
+
+A:SP$ DamageAll | Cost$ R G W U | ValidCards$ Creature.OppCtrl,Planeswalker.OppCtrl | NumDmg$ 3 | SubAbility$ DBDraw | SpellDescription$ CARDNAME deals 3 damage to each creature and planeswalker your opponent control.
+SVar:DBDraw:DB$ Draw | NumCards$ 1 | SubAbility$ DBChangeZone
+
+SVar:DBChangeZone:DB$ ChangeZone | Origin$ Library | Destination$ Battlefield | ChangeType$ Land.Basic | ChangeNum$ 1 | SubAbility$ DBReturn | StackDescription$ SpellDescription |  SpellDescription$ Search your library for up to one basic land cards, put them onto the battlefield, then shuffle your library.
+
+SVar:DBReturn:DB$ ChangeZone | ValidTgts$ Permanent | TgtPrompt$ Select target permanent | Origin$ Battlefield | Destination$ Hand | SpellDescription$ Return target permanent you control to its owner’s hand.
+
+Oracle:Air-strike Support deals 3 damage to each creature and planeswalker your opponent control. Draw a card. Search your library for a basic land card, put it onto the battlefield, then shuffle your library. Return target permanent you control to its owner’s hand.

@@ -1,0 +1,9 @@
+Name:IJN Shiratsuyu Class
+ManaCost:1 W
+Types:Creature Kancolle DD Destroyer
+PT:1/2
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigToken | TriggerDescription$ When CARDNAME enters the battlefield, create a 1/1 blue Destroyer creature token with “T, Target a player or creature without flying. Flip a coin. Destroyer deals 2 damage to the target the coin comes up heads.”
+SVar:TrigToken:DB$ Token | TokenAmount$ 1 | TokenScript$ u_1_1_destroyer | TokenOwner$ You | LegacyImage$ u 1 1 destroyer
+
+Oracle:When IJN Shiratsuyu Class enters the battlefield, create a 1/1 blue Destroyer creature token with “{T}, Exert Destroyer: Torpedo 1”  (Target a creature without flying. Flip a coins. Destroyer deals 2 damage to the target for each coin that comes up heads.)

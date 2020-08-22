@@ -1,0 +1,7 @@
+Name:Command Center
+ManaCost:2 U U
+Types:Legendary Enchantment Artifact
+S:Mode$ Continuous | Affected$ Kancolle.YouCtrl Creature.Artifact+YouCtrl | AddPower$ 2 | AddToughness$ 2 | AddKeyword$ Banding | Description$ Kancolle and artifact Creature you control gains +2/+2 and banding.
+A:AB$ ChangeZone | Cost$ U U U T | Origin$ Library | Destination$ Hand | ChangeType$ Permanent.Kancolle | ChangeNum$ 1 | ShuffleNonMandatory$ True | SpellDescription$ You may search your library for a Kancolle Permanent, reveal it, put it into your hand, then shuffle your library.
+SVar:PlayMain1:TRUE
+Oracle:Kancolle and artifact Creature you control gains +2/+2 and banding.\n {U}{U}{U}, {T}: You may search your library for a Kancolle Permanent, reveal it, put it into your hand, then shuffle your library.

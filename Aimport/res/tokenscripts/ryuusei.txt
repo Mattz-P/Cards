@@ -1,0 +1,13 @@
+Name:Ryuusei
+ManaCost:no cost
+Types:Creature Kancolle Kankou
+Colors:blue
+K:Flying
+K:Echo:1
+PT:0/3
+
+A:AB$ Repeat | Cost$ T Exert<1/CARDNAME> | ValidTgts$ Creature.withoutFlying | TgtPrompt$ Select target creature without flying | RepeatSubAbility$ DBFlip | MaxRepeat$ 2 | SpellDescription$ Target a creature without flying. Flip a coins. Destroyer deals 2 damage to the target if it the coin landed on head.
+SVar:DBFlip:DB$FlipACoin | NoCall$ True | HeadsSubAbility$ DBDamageTarget
+SVar:DBDamageTarget:DB$DealDamage | Defined$ Targeted | NumDmg$ 2
+
+Oracle: Echo {1}\nFlying\n{T}: Exert Ryuusei: Torpedo 2 (Target a player or a creature without flying. Flip two coins. Ryuusei deals 2 damage to the target for each coin that comes up heads.)

@@ -1,0 +1,8 @@
+Name:Emergency Extraction
+ManaCost:1 U
+Types:Sorcery
+A:SP$ ChangeZone | Cost$ 1 U | TargetMin$ 1 | TargetMax$ 1 | ValidTgts$ Creature.YouOwn | TgtPrompt$ Select target creature you control | Origin$ Battlefield | Destination$ Hand | SubAbility$ DBChangeZone | SpellDescription$ Return target creature you control to its owner’s hand. 
+SVar:DBChangeZone:DB$ ChangeZone | Optional$ True | Origin$ Hand | Destination$ Battlefield | ChangeType$ Permanent.YouCtrl+cmcLEX | Optional$ True | ChangeNum$ 1 | References$ X
+SVar:X:Targeted$CardManaCost
+
+Oracle:Return target creature you control to its owner’s hand. You may put a permanent card with converted mana cost less than X from your hand onto the battlefield, where X is the converted mana cost of target creature.

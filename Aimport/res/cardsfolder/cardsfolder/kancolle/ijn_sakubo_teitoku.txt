@@ -1,0 +1,16 @@
+Name:IJN Sakubo Teitoku
+ManaCost:2 W U
+Types:Legendary Planeswalker Sakubo
+Loyalty:4
+
+A:AB$ Scry | Cost$ AddCounter<2/LOYALTY> | Planeswalker$ True | ScryNum$ 2 | SubAbility$ DBDraw | SpellDescription$ Scry 1, then draw a card.
+SVar:DBDraw:DB$ Draw | Defined$ You | NumCards$ 1
+
+A:AB$ Token | Cost$ SubCounter<2/LOYALTY> | Planeswalker$ True | TokenOwner$ You | TokenAmount$ 1 | TokenScript$ u_1_1_destoyer | LegacyImage$ u 1 1 destoyer | SpellDescription$ Create two 1/1 blue Kancolle Destroyer creature tokens with “T, Exert Destroyer: Torpedo 1”.
+
+A:AB$ Untap | Cost$ SubCounter<2/LOYALTY> | Planeswalker$ True | ValidTgts$ Permanent | TargetMin$ 0 | TargetMax$ 3 | SpellDescription$ Untap up to three target permanents.
+
+A:AB$ Effect | Cost$ SubCounter<9/LOYALTY> | Name$ Emblem - Sakubo Teitoku | Image$ emblem_sakubo_teitoku | StaticAbilities$ STSakubo | Planeswalker$ True | Ultimate$ True | Stackable$ False | Duration$ Permanent | AILogic$ Always | SpellDescription$ You get an emblem with “Artifacts, enchantments, and lands you control have indestructible.”
+SVar:STSakubo:Mode$ Continuous | EffectZone$ Command | Affected$ Artifact.YouCtrl Land.YouCtrl Enchantment.YouCtrl | AffectedZone$ Battlefield | AddKeyword$ Indestructible
+
+Oracle:[+2]: Scry 2, then draw a card.\n[-2]: Create two 1/1 blue Kancolle Destroyer creature tokens with “T, Exert Destroyer: Torpedo 1”.\n[-2]: Untap up to three target permanent.\n[-11]: You get an emblem with “Artifacts, enchantments, and lands you control have indestructible.”

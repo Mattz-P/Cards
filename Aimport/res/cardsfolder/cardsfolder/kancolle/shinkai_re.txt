@@ -1,0 +1,14 @@
+Name:Shinkai Re
+ManaCost:W W W B B B
+Types:Creature KanColle Hime BB Battleship
+PT:8/8
+K:Double strike
+K:Vigilance
+
+A:AB$ Destroy | Cost$ W T | ValidTgts$ Enchantment | TgtPrompt$ Select target enchantment | SpellDescription$ Destroy target enchantment.
+
+A:AB$ DestroyAll | Cost$ B B B B B Sac<1/CARDNAME> | ValidCards$ Permanent | SpellDescription$ Destroy each permanent on the battlefield.
+SVar:NonStackingEffect:True
+AI:RemoveDeck:All
+
+Oracle:Double strike, Vigilance.\n{W}, {T}: Destroy target Enchantment.\m{B}{B}{B}{B}{B}, Sacrifice Shinkai Re: Destroy each permanent on the battlefield.

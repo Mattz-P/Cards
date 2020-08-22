@@ -1,0 +1,1 @@
+tar -a -c -f cardsfolder.zip cardsfolder

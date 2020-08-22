@@ -1,0 +1,7 @@
+Name:Radio Silence
+ManaCost:2 U
+Types:Instant
+
+A:SP$ PumpAll | Cost$ 2 U | ValidCards$ Creature.YouCtrl | KW$ HIDDEN Unblockable & Shroud | SpellDescription$ Creatures you control gains shroud and can't be blocked until end of turn.
+
+Oracle:Creatures you control gains shroud and can't be blocked until end of turn.

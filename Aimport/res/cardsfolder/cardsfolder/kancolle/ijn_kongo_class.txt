@@ -1,0 +1,15 @@
+Name:IJN Kongo Class
+ManaCost:3 R W
+Types:Creature Kancolle BB Battleship
+PT:4/6
+K:Vigilance
+K:Haste
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDealDamage | TriggerDescription$ When CARDNAME enters the battlefield, it deals 4 damage to target creature.
+SVar:TrigDealDamage:DB$DealDamage | ValidTgts$ Creature | TgtPrompt$ Select target creature | NumDmg$ 4
+SVar:PlayMain1:TRUE
+
+T:Mode$ Attacks | ValidCard$ Card.Self | Execute$ TrigChange | TriggerZones$ Battlefield | OptionalDecider$ You | Secondary$ True | TriggerDescription$ Whenever CARDNAME enters the battlefield or attacks, you may return target permanent card with converted mana cost 3 or less from your graveyard to the battlefield.
+SVar:TrigChange:AB$ChangeZone | Origin$ Graveyard | Destination$ Battlefield | ValidTgts$ Permanent.YouCtrl+cmcLE3 | Cost$ 0
+
+Oracle: Vigilance, Haste\nWhen IJN Kongo Class enters the battlefield, it deals 4 damage to target creature.\nWhenever IJN Kongo Class attacks, you may return target permanent card with converted mana cost 3 or less from your graveyard to the battlefield.

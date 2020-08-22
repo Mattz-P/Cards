@@ -1,0 +1,9 @@
+Name:Expedition
+ManaCost:3 G G
+Types:Sorcery
+K:Suspend:2:G U
+A:SP$ ChangeZone | Cost$ 3 G G | Origin$ Library | Destination$ Battlefield | ChangeType$ Land | ChangeNum$ 2 | SubAbility$ TrigDraw | SpellDescription$ Search your library for up to two basic land cards, put them onto the battlefield, then shuffle your library. 
+SVar:TrigDraw:DB$Draw | Defined$ You | NumCards$ 1 | Execute$ TrigToken
+SVar:TrigToken:DB$ Token | TokenAmount$ 2 | TokenScript$ shizai | TokenOwner$ You | LegacyImage$ shizai
+AI:RemoveDeck:Random
+Oracle:Search your library for up to two basic land cards, put them onto the battlefield, then shuffle your library. Draw a card. Create two colorless Shizai artifact token with “T, Sacrifice this Put a +1/+1 counter on target creature.”\nSuspend 2—{G}{U} (Rather than cast this card from your hand, you may pay GU and exile it with two time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost.)

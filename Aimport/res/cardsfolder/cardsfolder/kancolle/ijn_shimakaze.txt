@@ -1,0 +1,13 @@
+Name:IJN Shimakaze
+ManaCost:U R
+Types:Legendary Creature Kancolle DD Destroyer
+PT:2/3
+K:Vigilance
+K:First Strike
+K:Haste
+
+A:AB$ Repeat | Cost$ 1 U T  | ValidTgts$ Creature.withoutFlying,Player,Planeswalker | TgtPrompt$ Select any target without fliying | RepeatSubAbility$ DBFlip | MaxRepeat$ 5 | SpellDescription$ Target a player a creature without fliying. Flip 5 coins. CARDNAME deals 2 damage to the target for each coin that comes up heads.
+SVar:DBFlip:DB$FlipACoin | NoCall$ True | HeadsSubAbility$ DBDamageTarget
+SVar:DBDamageTarget:DB$DealDamage | Defined$ Targeted | NumDmg$ 2
+
+Oracle:First strike, vigilance, haste\n{1}{U}, {T}: Target a player or a creature without fliying. Flip 5 coins. IJN Shimakaze deals 2 damage to the target for each coin that comes up heads.

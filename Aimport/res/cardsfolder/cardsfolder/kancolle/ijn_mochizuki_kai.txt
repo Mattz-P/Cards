@@ -1,0 +1,8 @@
+Name:IJN Mochizuki Kai
+ManaCost:1 W W
+Types:Legendary Creature Kancolle DD Destroyer
+PT:2/3
+K:Lifelink
+
+S:Mode$ Continuous | Affected$ Creature.Other+YouCtrl | AddPower$ 1 | AddToughness$ 1 | AddKeyword$ vigilance | Description$ Other creatures you control gain +1/+1 and vigilance.
+Oracle: Lifelink

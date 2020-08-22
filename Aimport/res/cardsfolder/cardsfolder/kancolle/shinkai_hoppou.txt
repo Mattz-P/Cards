@@ -1,0 +1,12 @@
+Name:Shinkai Hoppou
+ManaCost:2 B B B R R R
+Types:Legendary Creature KanColle Hime
+PT:8/10
+K:Deathtouch
+K:Fear
+K:Undying
+K:Reach
+K:Trample
+A:AB$ Token | Cost$ B B | TokenAmount$ 2 | TokenScript$ shinkai_fighter | TokenOwner$ You | LegacyImage$ shinkai_fighter | SpellDescription$ Create 2 Shinkai Fighter Black 2/3 token Creature with flying and “T, Fighter deals 4 damage to target creature with flying.”
+A:AB$ Token | Cost$ R R | TokenAmount$ 1 | TokenScript$ shinkai_bomber | TokenOwner$ You | LegacyImage$ shinkai_bomber | SpellDescription$ Create 1 Shinkai Bomber Black Red 4/1 token Creature with flying, haste, and “Bomber can’t block.”
+Oracle:Deathtouch, Fear, Undying, Reach, Trample\n{B}{B}, Create 4 Shinkai Fighter Black 2/5 token Creature with flying and “T, Fighter deals 4 damage to target creature with flying.”\n{R}{R}, Create 3 Shinkai Bomber Black Red 4/3 token Creature with flying, haste, and “Bomber can’t block.”

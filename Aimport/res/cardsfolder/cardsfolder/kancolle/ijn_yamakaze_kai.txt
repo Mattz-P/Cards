@@ -1,0 +1,10 @@
+Name:IJN Yamakaze Kai
+ManaCost:B G
+Types:Legendary Creature Kancolle DD Destroyer
+PT:2/2
+
+A:AB$ Mana | Cost$ T Sac<1/Creature.Other/another creature> | Produced$ G G G | SpellDescription$ Add {G}{G}{G}.
+
+Oracle:{T}, Sacrifice another Creature: Add {G}{G}{G}.
+
+

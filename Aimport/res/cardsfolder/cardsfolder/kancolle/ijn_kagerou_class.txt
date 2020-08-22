@@ -1,0 +1,10 @@
+Name:IJN Kagerou Class
+ManaCost:R
+Types:Creature Kancolle DD Destroyer
+PT:2/1
+K:Haste
+
+A:AB$ DealDamage | Cost$ Sac<1/Permanent> | ValidTgts$ Creature,Player,Planeswalker | TgtPrompt$ Select any target | NumDmg$ 1 | SpellDescription$ CARDNAME deals 1 damage to any target.
+AI:RemoveDeck:All
+
+Oracle:Haste\nSacrifice a permanent: IJN Kagerou Class deals 1 damage to any damage.

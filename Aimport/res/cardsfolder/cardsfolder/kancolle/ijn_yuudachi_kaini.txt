@@ -1,0 +1,11 @@
+Name:IJN Yuudachi Kaini
+ManaCost:1 R W
+Types:Legendary Creature Kancolle DD Destroyer
+PT:4/2
+K:First Strike
+
+A:AB$ Repeat | Cost$ R R | ValidTgts$ Creature.withoutFlying | TgtPrompt$ Select target creature without flying | RepeatSubAbility$ DBFlip | MaxRepeat$ 2 | SpellDescription$ Target a creature without flying. Flip 2 coins. CARDNAME deals 2 damage to the target for each coin that comes up heads.
+SVar:DBFlip:DB$FlipACoin | NoCall$ True | HeadsSubAbility$ DBDamageTarget
+SVar:DBDamageTarget:DB$DealDamage | Defined$ Targeted | NumDmg$ 2
+
+Oracle:First strike\n{U}{U}: Torpedo 2 (Target a player or a creature without fliying. Flip 2 coins. IJN Yuudachi Kaini deals 2 damage to the target for each coin that comes up heads.)

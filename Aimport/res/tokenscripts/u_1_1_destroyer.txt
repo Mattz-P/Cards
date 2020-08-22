@@ -1,0 +1,11 @@
+Name:Destroyer
+ManaCost:no cost
+Types:Creature Kancolle Destroyer
+Colors:blue
+PT:1/1
+
+A:AB$ Repeat | Cost$ T Exert<1/CARDNAME> | ValidTgts$ Creature.withoutFlying | TgtPrompt$ Select target creature without flying | RepeatSubAbility$ DBFlip | MaxRepeat$ 1 | SpellDescription$ Target a creature without flying. Flip a coins. Destroyer deals 2 damage to the target if it the coin landed on head.
+SVar:DBFlip:DB$FlipACoin | NoCall$ True | HeadsSubAbility$ DBDamageTarget
+SVar:DBDamageTarget:DB$DealDamage | Defined$ Targeted | NumDmg$ 2
+
+Oracle: {T}, Exert Destroyer: Torpedo 1 (Target a creature without flying. Flip a coins. Destroyer deals 2 damage to the target for each coin that comes up heads.)

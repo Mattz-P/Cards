@@ -1,0 +1,5 @@
+Name:Suzukaze's Denial
+ManaCost:U
+Types:Instant
+A:SP$ Counter | Cost$ U | TargetType$ Spell | TgtPrompt$ Select target Creature spell with power 4 or greater | ValidTgts$ Creature.powerGE4 | SpellDescription$ Counter target Creature spell with power 4 or greater.
+Oracle:Counter target Creature spell with power 4 or greater.

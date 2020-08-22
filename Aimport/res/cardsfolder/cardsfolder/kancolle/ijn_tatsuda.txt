@@ -1,0 +1,15 @@
+Name:IJN Tatsuda
+ManaCost:2 U B
+Types:Creature Kancolle CL Light-Cruiser
+PT:3/4
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigSurveil | TriggerDescription$ When CARDNAME enters the battlefield, surveil 3. When you do, you may return target nonland permanent an opponent controls to its owner's hand.
+SVar:TrigSurveil:DB$ Surveil | Defined$ You | Amount$ 3 | SubAbility$ TrigDraw
+SVar:TrigDraw:DB$Draw | Defined$ You | NumCards$ 1 | SubAbility$ DBChangeZone
+SVar:DBChangeZone:DB$ ChangeZone | Origin$ Graveyard | Destination$ Hand | ChangeType$ Permanent.YouOwn+Kancolle | Hidden$ True | Optional$ True
+DeckHas:Ability$Graveyard
+
+A:AB$ Repeat | Cost$ 2 U T Exert<1/CARDNAME> | ValidTgts$ Creature.withoutFlying | TgtPrompt$ Select target creature without flying | RepeatSubAbility$ DBFlip | MaxRepeat$ 4 | SpellDescription$ Target a creature without flying. Flip 4 coins. CARDNAME deals 2 damage to the target for each coin that comes up heads.
+SVar:DBFlip:DB$FlipACoin | NoCall$ True | HeadsSubAbility$ DBDamageTarget
+SVar:DBDamageTarget:DB$DealDamage | Defined$ Targeted | NumDmg$ 2
+Oracle:When IJN Tatsuda enters the battlefield, surveil 3. Draw a card. Return up to 1 Kancolle Permanent card from the graveyard to your hand.\n{2}{U}, {T}: Exert IJN Tatsuda: Torpedo 4 (Target a creature without flying. Flip four coins. Destroyer deals 2 damage to the target for each coin that comes up heads.)

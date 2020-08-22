@@ -1,0 +1,23 @@
+Name:Construction site
+ManaCost:2
+Types:Legendary Artifact Kancolle 
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigToken | TriggerDescription$ When CARDNAME enters the battlefield, create two colorless shizai artifact with "{T}, Sacrifice this artifact, put a +1/+1 counter on target creature".
+SVar:TrigToken:DB$ Token | TokenAmount$ 2 | TokenScript$ shizai | TokenOwner$ You | LegacyImage$ shizai
+DeckHas:Ability$Token
+T:Mode$ Phase | Phase$ End of Turn | ValidPlayer$ You | TriggerZones$ Battlefield | IsPresent$ Permanent.YouCtrl | PresentCompare$ GE7 | Execute$ TrigTransform | TriggerDescription$ At the beginning of your end step, If you control seven or more permanents transform CARDNAME.
+SVar:TrigTransform:DB$ SetState | Defined$ Self | Mode$ Transform
+AlternateMode:DoubleFaced
+Oracle:When Construction site enters the battlefield, create three colorless shizai artifact with "{T}, Sacrifice this artifact, put a +1/+1 counter on target creature".\nAt the beginning of your end step, If you control seven or more permanents transform Construction site.
+
+ALTERNATE
+
+Name:Chinjufu
+ManaCost:no cost
+Types:Legendary Land Port 
+A:AB$ Mana | Cost$ T | Produced$ Any | Amount$ 1 | SubAbility$ DBLoseLife | OptionalDecider$ You | Execute$ DBLoseLife | SpellDescription$ Add one mana of any color. Chinjufu deals 1 damage to you, create a colorless Shizai artifact.
+SVar:DBLoseLife:DB$LoseLife | LifeAmount$ 1 | SubAbility$ DBTreasure
+SVar:DBTreasure:DB$ Token | TokenAmount$ 1 | TokenScript$ Shizai | TokenOwner$ You | LegacyImage$ shizai
+A:AB$ Regenerate | Cost$ 1 T | ValidTgts$ Creature.Kancolle | TgtPrompt$ Select target Kancolle creature | SpellDescription$ Regenerate target Kancolle creature.
+A:AB$ ChangeZone | Cost$ X Sac<3/Shizai> T | Origin$ Library | Destination$ Battlefield | ChangeType$ Creature.Kancolle+cmcLEX | References$ X | ChangeNum$ 1 | SpellDescription$ Search your library for a creature card with converted mana cost twice of X or less and put it onto the battlefield, then shuffle your library.
+SVar:X:Count$xPaid
+Oracle:(Transforms from Treasure Map.)\n{T}: Add a mana of any color. Chinjufu deals 1 damage to you, create a colorless Shizai artifact.\n1, {T}: Regenerate target Kancolle creature.\n{X}, Sacrifice x Shizai, {T}: Search your library for a creature card with converted mana cost twice of X or less and put it onto the battlefield, then shuffle your library.

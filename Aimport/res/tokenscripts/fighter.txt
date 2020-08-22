@@ -1,0 +1,10 @@
+Name:Fighter
+ManaCost:no cost
+Types:Creature Kancolle Fighter
+Colors:red
+K:Flying
+K:Haste
+K:Echo:1
+PT:1/3
+A:AB$ DealDamage | Cost$ T | ValidTgts$ Creature.withFlying | NumDmg$ 3 | SpellDescription$ CARDNAME deals 3 damage to target creature with flying.
+Oracle: Haste, Flying\n{T}: Fighter deals 3 damage to target creature with flying.

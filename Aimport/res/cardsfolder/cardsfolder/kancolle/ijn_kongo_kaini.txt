@@ -1,0 +1,13 @@
+Name:IJN Kongo Kaini
+ManaCost:2 R R W W
+Types:Legendary Creature Kancolle BB Battleship
+PT:5/6
+K:Intimidate
+K:First strike
+K:Vigilance
+K:Reach
+K:Island-walk
+K:Trample
+K:Haste
+
+Oracle: Intimidate, first strike, vigilance, reach, island-walk, trample
