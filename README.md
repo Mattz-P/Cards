@@ -45,6 +45,8 @@ Note: You can choose your own directory, but you will need to manually change th
 
 ## Card List:
 
+The list is in the order of creation
+
 1. M IJN Zuihou Kaini Otsu
 2. M IJN Shimakaze
 3. R IJN Shigure Kai
