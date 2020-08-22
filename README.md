@@ -39,6 +39,63 @@ Note: You can choose your own directory, but you will need to manually change th
 * Additional Borders: http://msetemps.sourceforge.net/phpBB3/viewtopic.php?t=144
 * MSE Legendary Borders: https://magicseteditor.boards.net/thread/77/cajun-style-templates
 
+## Updates:
+
+8/21/2020 - MSE: 132 Scripted: 49
+
+## Card List:
+
+1. M IJN Zuihou Kaini Otsu
+2. M IJN Shimakaze
+3. R IJN Shigure Kai
+4. M IJN Kongo Kaini
+5. M Shinkai Hoppou
+6. M Command Center
+7. M IJN Ro-500
+8. R IJN Yukikaze
+9. L Plain
+10. L Island
+11. L Swamp
+12. L Mountain
+13. L Forest
+14. M IJN Yuudachi Kaini
+15. R IJN Tatsuda
+16. R Pax Kancolle
+17. M IJN Sakubo Teitoku
+18. U Air-strike Support
+19. R IJN Haruna Kai
+20. C IJN Shiratsuyu Class
+21. C IJN Samidare
+22. R IJN Yamakaze Kai
+23. U Kancolle Exploration
+24. R IJN Taiho Kai
+25. C IJN Kagerou Class
+26. U Capsizing
+27. M Construction site
+28. R Enthusiastic Invitation
+29. R IJN I-58 Kai
+30. U IJN Mochizuki Kai
+31. U Search light
+32. R Unusual descovery
+33. C Harukaze's Blessing
+34. C Suzukaze's Denial
+35. R Shinkai Re
+36. C Expedition
+37. C Commence in Yasen
+38. R KMS Bismarck
+39. R Emergency Extraction
+.
+40. U Industrialization
+41. C Pacify
+42. U IJN Kongo Class
+43. U IJN Inazuma Kai
+44. U IJN Hibiki Kai
+45. C IJN Akatsuki Class
+46. R IXC U-511
+47. C Notify
+48. C Radio Silence
+49. C Hard-Fight Recollection
+
 **Convenient Codes in MD Exclusively  for Matt**
 -------
 
