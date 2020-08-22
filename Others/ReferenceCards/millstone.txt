@@ -1,0 +1,5 @@
+Name:Millstone
+ManaCost:2
+Types:Artifact
+A:AB$ Mill | Cost$ 2 T | NumCards$ 2 | ValidTgts$ Player | TgtPrompt$ Choose a player | AILogic$ EndOfOppTurn | SpellDescription$ Target player mills two cards.
+Oracle:{2}, {T}: Target player mills two cards.

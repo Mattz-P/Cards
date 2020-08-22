@@ -1,0 +1,10 @@
+Name:Ashling's Prerogative
+ManaCost:1 R
+Types:Enchantment
+K:ETBReplacement:Other:ChooseEvenOdd
+SVar:ChooseEvenOdd:DB$ ChooseEvenOdd | Defined$ You | ListTitle$ Choose ODD or EVEN | AILogic$ CMCInHand | SpellDescription$ As CARDNAME enters the battlefield, choose odd or even. (Zero is even.)
+S:Mode$ Continuous | Affected$ Creature.cmcChosenEvenOdd | AddKeyword$ Haste | Description$ Each creature with converted mana cost of the chosen value has haste.
+S:Mode$ ETBTapped | ValidCard$ Creature.cmcNotChosenEvenOdd | Description$ Each creature without converted mana cost of the chosen value enters the battlefield tapped.
+AI:RemoveDeck:All
+SVar:Picture:http://www.wizards.com/global/images/magic/general/ashlings_prerogative.jpg
+Oracle:As Ashling's Prerogative enters the battlefield, choose odd or even. (Zero is even.)\nEach creature with converted mana cost of the chosen value has haste.\nEach creature without converted mana cost of the chosen value enters the battlefield tapped.

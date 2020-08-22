@@ -1,0 +1,9 @@
+Name:Grafdigger's Cage
+ManaCost:1
+Types:Artifact
+R:Event$ Moved | ActiveZones$ Battlefield | Origin$ Graveyard,Library | Destination$ Battlefield | ValidLKI$ Creature.Other | Prevent$ True | Description$ Creature cards in graveyards and libraries can't enter the battlefield.
+S:Mode$ CantBeCast | Origin$ Graveyard,Library | Description$ Players can't cast spells from graveyards or libraries.
+SVar:NonStackingEffect:True
+AI:RemoveDeck:Random
+SVar:Picture:http://www.wizards.com/global/images/magic/general/grafdiggers_cage.jpg
+Oracle:Creature cards in graveyards and libraries can't enter the battlefield.\nPlayers can't cast spells from graveyards or libraries.
