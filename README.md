@@ -1,7 +1,15 @@
-# **MTG Forge: Custom card set - Kantai Collection**
+# **Magic the Gathering Forge: Custom card set - Kantai Collection**
 ## Introduction:
 
-    This Repo Stores codes stores Kantai Collection extention set for Magic the Gathering: Forge
+This Repo Stores codes stores Kantai Collection extention set for Magic the Gathering: Forge. Starting with photoshoping each single picture and using an application on iPhone called CardCreator, the development procedure shifted MSE. The scripting was done with VSCode and batch for injections. 
+
+### About forge:
+
+*Forge is an implementation of Magic the Gathering that lets you play against a computer AI opponent using most of the rules of a real game. You can construct decks for you and the computer to play with, currently 18475 (and counting) cards are available. We now include over 100 schemes, vanguards and planes. You can also play in a draft, sealed deck format or in a gauntlet against the computer. There is a new variant game mode that lets you play against multiple computer opponents. Currently, this program only lets you play against the computer, you cannot play against another human player over the Internet.*
+
+You can always download the latest release here: https://releases.cardforge.org/latest/
+
+If you want to create your own custom MTG Forge set: https://github.com/Cockatrice/Cockatrice/wiki/Custom-Cards-&-Sets
 
 ## Installation:
 
