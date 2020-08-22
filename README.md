@@ -1,7 +1,7 @@
 # **Magic the Gathering Forge: Custom card set - Kantai Collection**
 ## Introduction:
 
-This Repo Stores codes stores Kantai Collection extention set for Magic the Gathering: Forge. Starting with photoshoping each single picture and using an application on iPhone called CardCreator, the development procedure shifted MSE. The scripting was done with VSCode and batch for injections. 
+This Repo Stores codes for Kantai Collection extension set for Magic the Gathering: Forge. Starting with photoshopping every single picture and using an application on iPhone called CardCreator, the development procedure shifted MSE. The scripting was done with VSCode and batch for injections. 
 
 ### About forge:
 
@@ -13,11 +13,13 @@ If you want to create your own custom MTG Forge set: https://github.com/Cockatri
 
 ## Installation:
 
-1. Downlaod Forge 36 from the link below
+1. Download Forge 36 from the link below
 2. Unpack the directory and change its name to Forge 36. Move it under "D:\m\Games\"
 3. **Unzip "D:\m\Games\Forge 36\res\cardsfolder\cardsfolder.zip"** 
-4. Click Inject and wait until the batch processes finishes
+4. Click Inject and wait until the batch processes complete
 5. Change the theme located at the right top corner ("The Forge logo"/Layout/Theme) to Darked
+
+Note: You can choose your own directory, but you will need to manually change the directory in Inject.bat.
 
 ## Dependencies:
 
@@ -28,15 +30,16 @@ If you want to create your own custom MTG Forge set: https://github.com/Cockatri
 * VSCode (Optional)
 * Photoshop (Optional)
 
-## Relavant Links:
+## Relevant Links:
 
 * Forge API: https://www.slightlymagic.net/wiki/Forge_API#AbilityEffect
 * Forge 1.6.36 Download Link: https://releases.cardforge.org/forge/forge-gui-desktop/1.6.36/forge-gui-desktop-1.6.36.tar.bz2
-* Report Forge Issues: https://git.cardforge.org/core-developers/forge/issues (Only report bugs related to the original software. Don't ask them for help from problem arised in this custom set.)
+* Report Forge Issues: https://git.cardforge.org/core-developers/forge/issues (Only report bugs related to the original software. Don't ask them for help from problem arose in this custom set.)
+* Magic Set Editor: https://magicseteditor.boards.net/page/downloads
 * Additional Borders: http://msetemps.sourceforge.net/phpBB3/viewtopic.php?t=144
 * MSE Legendary Borders: https://magicseteditor.boards.net/thread/77/cajun-style-templates
 
-**Convenient Codes in MD Excusively for Matt**
+**Convenient Codes in MD Exclusively  for Matt**
 -------
 
 ### Written in:
@@ -44,7 +47,7 @@ If you want to create your own custom MTG Forge set: https://github.com/Cockatri
 - Batch:
 
 > ### **Batch:**
-> A batch file is a script file in DOS, OS/2 and Microsoft Windows. It consists of a series of commands to be executed by the command-line interpreter, stored in a plain text file. A batch file may contain any command the interpreter accepts interactively and use constructs that enable conditional branching and looping within the batch file, such as IF, FOR, and GOTO labels. The term "batch" is from batch processing, meaning "non-interactive execution", though a batch file may not process a batch of multiple data.
+> A batch file is a script file in DOS, OS/2, and Microsoft Windows. It consists of a series of commands to be executed by the command-line interpreter, stored in a plain text file. A batch file may contain any command the interpreter accepts interactively and use constructs that enable conditional branching and looping within the batch file, such as IF, FOR, and GOTO labels. The term "batch" is from batch processing, meaning "non-interactive execution", though a batch file may not process a batch of multiple data.
 
 ### Some md helps:
 
@@ -55,7 +58,7 @@ If you want to create your own custom MTG Forge set: https://github.com/Cockatri
 2. Quarter Notes
 3. An [example](http://example.com).
 
-PS: I know this card is broken in pieces. This is the only card that's imbalenced.
+PS: I know this card is broken in pieces. This is the only card that's imbalanced.
 
 ![Image](Others/Zuihou/ijn_zuihou_kaini_otsu.jpg "icon")
 
