@@ -9,14 +9,7 @@
 2. Unpack the directory and change its name to Forge 36. Move it under "D:\m\Games\"
 3. **Unzip "D:\m\Games\Forge 36\res\cardsfolder\cardsfolder.zip"** 
 4. Click Inject and wait until the batch processes finishes
-
-## Relavant Links:
-
-* Forge API: https://www.slightlymagic.net/wiki/Forge_API#AbilityEffect
-* Forge 1.6.36 Download Link: https://releases.cardforge.org/forge/forge-gui-desktop/1.6.36/forge-gui-desktop-1.6.36.tar.bz2
-* Report Forge Issues: https://git.cardforge.org/core-developers/forge/issues (Only report bugs related to the original software. Don't ask them for help from problem arised in this custom set.)
-* Additional Borders: http://msetemps.sourceforge.net/phpBB3/viewtopic.php?t=144
-* MSE Legendary Borders: https://magicseteditor.boards.net/thread/77/cajun-style-templates
+5. Change the theme located at the right top corner ("The Forge logo"/Layout/Theme) to Darked
 
 ## Dependencies:
 
@@ -26,6 +19,14 @@
 * Beleren and other WOTC fonts
 * VSCode (Optional)
 * Photoshop (Optional)
+
+## Relavant Links:
+
+* Forge API: https://www.slightlymagic.net/wiki/Forge_API#AbilityEffect
+* Forge 1.6.36 Download Link: https://releases.cardforge.org/forge/forge-gui-desktop/1.6.36/forge-gui-desktop-1.6.36.tar.bz2
+* Report Forge Issues: https://git.cardforge.org/core-developers/forge/issues (Only report bugs related to the original software. Don't ask them for help from problem arised in this custom set.)
+* Additional Borders: http://msetemps.sourceforge.net/phpBB3/viewtopic.php?t=144
+* MSE Legendary Borders: https://magicseteditor.boards.net/thread/77/cajun-style-templates
 
 **Convenient Codes in MD Excusively for Matt**
 -------
@@ -46,7 +47,7 @@
 2. Quarter Notes
 3. An [example](http://example.com).
 
-PS: I know this card is broken in pieces. This is the only card that's unbalenced.
+PS: I know this card is broken in pieces. This is the only card that's imbalenced.
 
 ![Image](Others/Zuihou/ijn_zuihou_kaini_otsu.jpg "icon")
 
