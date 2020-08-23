@@ -6,5 +6,10 @@ K:Cumulative upkeep:1
 
 S:Mode$ Continuous | Affected$ Kancolle.YouCtrl | AddPower$ X | AddToughness$ X | Reference$ X | Description$ Creatures you control gains +1/+1 for each age counter on this permanent.
 SVar:X:Count$CardCounters.AGE
+
+A:AB$ RemoveCounter | Cost$ T | CounterType$ AGE | CounterNum$ 1 | SpellDescription$ Remove an age counter from CARDNAME.
+
+A:AB$ PutCounter | Cost$ G T Sac<1/Artifact> | ValidTgts$ Creature | TgtPrompt$ Select target creature | CounterType$ P1P1 | CounterNum$ 2 | SpellDescription$ G, T, Sacrifice an Artifact: Put two +1/+1 counter on target creature.
+
 SVar:PlayMain2:TRUE
-Oracle:Creatures you control gains +1/+1 for each age counter on this permanent.\nT: Remove an age counter from Industrialization\nG, T, Sacrifice a Shizai: Put two +1/+1 counter on target creature.\nCumulative upkeep—1 (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)
+Oracle:Creatures you control gains +1/+1 for each age counter on this permanent.\nT: Remove an age counter from Industrialization\nG, T, Sacrifice an Artifact: Put two +1/+1 counter on target creature.\nCumulative upkeep—1 (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)

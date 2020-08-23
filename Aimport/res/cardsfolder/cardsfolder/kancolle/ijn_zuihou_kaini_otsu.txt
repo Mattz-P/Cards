@@ -1,6 +1,6 @@
 Name:IJN Zuihou Kaini Otsu
 ManaCost:2 W R
-Types:Legendary Creature KanColle CVL LCarrier
+Types:Legendary Creature Kancolle CVL LCarrier
 PT:3/5
 K:Defender
 K:Reach
