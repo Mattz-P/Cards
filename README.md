@@ -1,7 +1,7 @@
 # **Magic the Gathering Forge: Custom card set - Kantai Collection**
 ## Introduction:
 
-This Repo Stores codes for Kantai Collection extension set for Magic the Gathering: Forge. Starting with photoshopping every single picture and using an application on iPhone called CardCreator, the development procedure shifted MSE. The scripting was done with VSCode and batch for injections. 
+This Repo Stores codes for Kantai Collection extension set for Magic the Gathering: Forge. Starting with photoshopping every single picture and using an application on iPhone called CardCreator, the development procedure shifted MSE. The scripting was done with VSCode and batch for injections. Each card in the set is designed under EDH card power standards. Althought, this set can be played as a standalone set, the set isn't meant to be played with standard/pioneer power level cards. Ideally this set finishes with roughly 350 cards fully scripted and fine tuned.
 
 ### About forge:
 
@@ -117,7 +117,7 @@ The list is in the order of creation
 2. Quarter Notes
 3. An [example](http://example.com).
 
-PS: I know this card is broken in pieces. This is the only card that's imbalanced.
+PS: I know this card is broken in pieces. This card was first created under this set using Photoshop which serves a symbolic purpose for this set.
 
 ![Image](Others/Zuihou/ijn_zuihou_kaini_otsu.jpg "icon")
 
