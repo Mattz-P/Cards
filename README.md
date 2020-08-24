@@ -117,7 +117,7 @@ The list is in the order of creation
 2. Quarter Notes
 3. An [example](http://example.com).
 
-PS: I know this card is broken in pieces. This card was first created under this set using Photoshop which serves a symbolic purpose for this set.
+PS: I know this card is broken in pieces. This card was first created under this set using Photoshop which serves a symbolic purpose for this set and wasn't designed from a playable card perspective.
 
 ![Image](Others/Zuihou/ijn_zuihou_kaini_otsu.jpg "icon")
 
