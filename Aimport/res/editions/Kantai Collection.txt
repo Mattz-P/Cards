@@ -17,7 +17,7 @@ Booster=9 Common:!fromSheet("AER Planeswalker Decks"), 3 Uncommon:!fromSheet("AE
 6 M Command Center
 7 M IJN Ro-500
 8 R IJN Yukikaze
-9 L Plain
+9 L Plains
 10 L Island
 11 L Swamp
 12 L Mountain
