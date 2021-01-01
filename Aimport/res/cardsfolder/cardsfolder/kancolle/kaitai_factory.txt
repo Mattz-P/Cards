@@ -2,12 +2,9 @@ Name:Kaitai Factory
 ManaCost:3
 Types:Artifact
 
-T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigChange | TriggerDescription$ When CARDNAME enters the battlefield, exile all cards from target player's graveyard.
-SVar:TrigChange:DB$ChangeZoneAll | Origin$ Graveyard | Destination$ Exile | ValidTgts$ Player | TgtPrompt$ Select target player | ChangeType$ Card | SpellDescription$ Exile all cards from target player's graveyard.
-
 A:AB$ Mana | Cost$ T | Produced$ C | SpellDescription$ Add {C}.
 
 A:AB$ Token | Cost$ T Sac<1/Artifact;Creature/artifact or creature> | LegacyImage$ shizai | TokenAmount$ X | TokenScript$ shizai | TokenOwner$ You | References$ X | SpellDescription$ Create X Shizai artifact tokens, where X is the sacrificed permanent's converted mana cost.
 SVar:X:Sacrificed$CardManaCost
 
-Oracle:Equipped creature gets -1/+1.\nWhenever equipped creature attacks, you may draw a card.\nEquip {1}
+Oracle:Equipped creature gets -1/+1.\nWhenever equipped creature attacks, you may draw a card.

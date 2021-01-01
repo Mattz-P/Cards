@@ -1,13 +1,17 @@
+set picture-location=%localappdata%\Forge\Cache\pics\cards\KAN
+if exist "D:\m\Games\Forge 36\" (set forge-location=D:\m\Games\Forge 36)else (set /p forge-location="Enter Forge Path (I.E.: D:\m\Games\Forge 36) : ")
+
 REM Pictures and Almost everything else
-xcopy KAN "C:\Users\matth\AppData\Local\Forge\Cache\pics\cards\KAN" /I /Y
-xcopy D:\m\File\Cards\Aimport\res "D:\m\Games\Forge 36\res" /I /Y /S
-
-REM Compile Cards
-
-cd "D:\m\Games\Forge 36\res\cardsfolder"
-start cmd.exe /C "D:\m\Games\Forge 36\res\cardsfolder\ZIP.bat"
+xcopy KAN "%picture-location%" /I /Y
+xcopy .\Aimport\res "%forge-location%\res" /I /Y /S
 
 REM Token Pictures
-xcopy "D:\m\File\Cards\Aimport\res\tokens" "C:\Users\matth\AppData\Local\Forge\Cache\pics\tokens" /I /Y /S
+xcopy .\Aimport\res\tokens "%localappdata%\Forge\Cache\pics\tokens\" /I /Y /S
+
+REM Compile Cards
+if exist "%forge-location%\res\cardsfolder\cardsfolder" (Echo Cardfolder already unzipped) else (tar -xf "%forge-location%\res\cardsfolder\cardsfolder.zip")
+cd "%forge-location%\res\cardsfolder"
+start cmd.exe /C ZIP.bat
 
 pause
+Exit

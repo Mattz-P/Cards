@@ -62,6 +62,8 @@ Booster=9 Common:!fromSheet("AER Planeswalker Decks"), 3 Uncommon:!fromSheet("AE
 48 C Radio Silence
 49 C Hard-Fight Recollection
 
+50 C Kaitai Factory
+
 [tokens]
 suisei
 fighter
