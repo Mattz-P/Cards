@@ -1,0 +1,9 @@
+Name:Teitoku's Dream
+ManaCost:U
+Types:Sorcery
+K:Flashback:1 R
+
+A:SP$ Dig | Cost$ U | DigNum$ 5 | ChangeNum$ 1 | ChangeValid$ Card | Optional$ True | SpellDescription$ Look at the top five cards of your library. You may reveal a card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+DeckHints:Type$Kancolle
+
+Oracle:Look at the top five cards of your library. You may reveal a card from among them and put it into your hand. Put the rest on the bottom of your library in any order.\nFlashback 1U (You may cast this card from your graveyard for its flashback cost. Then exile it.)

@@ -1,0 +1,14 @@
+Name:Sanso Gyorai
+ManaCost:1
+Types:Artifact Equipment
+K:Equip:2
+S:Mode$ Continuous | Affected$ Creature.EquippedBy | AddAbility$ TorpDamage | AddKeyword$ Double Strike & Islandwalk | Description$ Equipped creature gets Double Strike and Islandwalk.
+
+T:Mode$ Attacks | ValidCard$ Card.EquippedBy | Execute$ TrigDraw | OptionalDecider$ You | TriggerDescription$ Whenever equipped creature attacks, you may draw a card.
+SVar:TrigDraw:DB$Draw | NumCards$ 1 
+
+SVar:TorpDamage:AB$ Repeat | Cost$ T Exert<1/CARDNAME> | ValidTgts$ Creature.withoutFlying | TgtPrompt$ Select any target without fliying | RepeatSubAbility$ DBFlip | MaxRepeat$ 2 | SpellDescription$ Target a player a creature without fliying. Flip 2 coins. CARDNAME deals 2 damage to the target for each coin that comes up heads.
+SVar:DBFlip:DB$FlipACoin | NoCall$ True | HeadsSubAbility$ DBDamageTarget
+SVar:DBDamageTarget:DB$DealDamage | Defined$ Targeted | NumDmg$ 2
+
+Oracle:Equipped creature gets -1/+1.\nWhenever equipped creature attacks, you may draw a card.\nEquip {1}

@@ -1,0 +1,16 @@
+Name:Shinkai CV Hime
+ManaCost:1 W B B R R
+Types:Legendary Creature Shinkai Hime Carrier
+PT:4/8
+K:Intimidate
+K:First Strike
+K:Reach
+K:Lifelink
+K:Shroud
+K:Haste
+
+A:AB$ GainLife | Cost$ W | Defined$ You | LifeAmount$ 2 | SpellDescription$ You gain 1 life.
+A:AB$ Token | Cost$ B B | TokenAmount$ 1 | TokenScript$ shinkai_fighter | TokenOwner$ You | LegacyImage$ shinkai_fighter | SpellDescription$ Create 2 Shinkai Fighter Black 2/3 token Creature with flying and “T, Fighter deals 4 damage to target creature with flying.”
+A:AB$ Token | Cost$ R R | TokenAmount$ 1 | TokenScript$ shinkai_bomber | TokenOwner$ You | LegacyImage$ shinkai_bomber | SpellDescription$ Create 1 Shinkai Bomber Black Red 4/1 token Creature with flying, haste, and “Bomber can’t block.”
+
+Oracle:Intimidate, first strike, reach, lifelink, shroud, haste\n{W}, You gain 2 life\n{B}{B}, Create 1 Shinkai Fighter Black 2/3 token Creature with flying and “{T}, Fighter deals 4 damage to target creature with flying.”\n{R}{R}, Create 1 Shinkai Bomber Black 4/1 token Creature with flying, haste, and “Bomber can’t block.”\n

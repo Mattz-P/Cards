@@ -8,5 +8,6 @@ K:Haste
 A:AB$ Repeat | Cost$ R/W T Exert<1/CARDNAME> | ValidTgts$ Creature.withoutFlying | TgtPrompt$ Select target creature without flying | RepeatSubAbility$ DBFlip | MaxRepeat$ 3 | SpellDescription$ Target a creature without flying. Flip 3 coins. CARDNAME deals 2 damage to the target for each coin that comes up heads.
 SVar:DBFlip:DB$FlipACoin | NoCall$ True | HeadsSubAbility$ DBDamageTarget
 SVar:DBDamageTarget:DB$DealDamage | Defined$ Targeted | NumDmg$ 2
+DeckHints:Type$Kancolle
 
 Oracle:Vigilance, haste\n{1}{R/W}, {T}, Exert IJN Shigure Kai: Torpedo 3 (Target a creature without flying. Flip three coins. Destroyer deals 2 damage to the target for each coin that comes up heads.)

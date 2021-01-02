@@ -1,0 +1,9 @@
+Name:Gendai Factory
+ManaCost:3
+Types:Artifact Kancolle
+
+A:AB$ Token | Cost$ 2 T | LegacyImage$ shizai | TokenAmount$ 1 | TokenScript$ shizai | TokenOwner$ You | SpellDescription$ Create 1 Shizai artifact tokens.
+A:AB$ Token | Cost$ 3 Sac<1/Shizai> | TokenAmount$ 1 | TokenScript$ destroyer | TokenOwner$ You | LegacyImage$ destroyer | SpellDescription$ Create a 1/1 blue Destroyer creature token with “{T}: Exert Destroyer, Torpedo 1”
+A:AB$ Token | Cost$ 4 Sac<2/Shizai> | TokenAmount$ 2 | TokenScript$ LightCruiser | TokenOwner$ You | LegacyImage$ LightCruiser | SpellDescription$ Create a 2/3 blue Kancolle Light-Curiser Creature token. 
+
+Oracle:{2}, {T}: Create a colorless shizai artifact with “{T}, Sacrifice this artifact, put a +1/+1 counter on target creature”.\n{3}, Sacrifice a Shizai, {T}: Create a 1/1 blue Destroyer creature token with “{T}: Exert Destroyer, Torpedo 1”\n{4}, Sacrifice two Shizai, {T}: Create two blue 2/3 CL creature token.

@@ -1,6 +1,6 @@
 Name:Shinkai Re
 ManaCost:W W W B B B
-Types:Creature KanColle Hime BB Battleship
+Types:Creature Shinkai Hime BB Battleship
 PT:8/8
 K:Double strike
 K:Vigilance

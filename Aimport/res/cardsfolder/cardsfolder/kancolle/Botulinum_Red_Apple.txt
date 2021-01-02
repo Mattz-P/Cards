@@ -1,0 +1,8 @@
+Name:Botulinum Red Apple
+ManaCost:0
+Types:Legendary Enchantment
+
+A:AB$ Mana | Cost$ T Sac<1/CARDNAME> PayLife<5> | Produced$ W U B R G | AILogic$ BlackLotus | Subability$ DBPoison | SpellDescription$ Add {W}{U}{B}{R}{G}. You get 5 poison counters.
+SVar:DBPoison:DB$ Poison | Defined$ You | Num$ 5
+
+Oracle:{T}, Pay 5 life, Sacrifice Botulinum Red Apple: Add {W}{U}{B}{R}{G}. You get 5 poison counters.

@@ -63,6 +63,19 @@ Booster=9 Common:!fromSheet("AER Planeswalker Decks"), 3 Uncommon:!fromSheet("AE
 49 C Hard-Fight Recollection
 
 50 C Kaitai Factory
+51 R Shinkai Wo Kai FS
+52 U Shinkai Destroyer Hime
+53 S Botulinum Red Apple
+54 R Shinkai CV Hime
+55 C Gendai Factory
+56 C Sanso Gyorai
+57 C IJN Yamakaze
+58 C Yamakaze's doubt
+59 U IJN Akigumo
+
+60 C Shinkainize
+
+999 U Teitoku's Dream
 
 [tokens]
 suisei
@@ -74,3 +87,4 @@ ryuusei
 shiden
 shizai
 u_1_1_destroyer
+LightCruiser

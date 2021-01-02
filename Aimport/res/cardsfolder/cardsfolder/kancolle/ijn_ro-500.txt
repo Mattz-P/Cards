@@ -10,5 +10,6 @@ SVar:Exploration:Mode$ Continuous | Affected$ You | AdjustLandPlays$ 1 | EffectZ
 A:AB$ Repeat | Cost$ U U | ValidTgts$ Creature.withoutFlying | TgtPrompt$ Select target creature without flying | RepeatSubAbility$ DBFlip | MaxRepeat$ 2 | SpellDescription$ Target a creature without flying. Flip 2 coins. CARDNAME deals 2 damage to the target for each coin that comes up heads.
 SVar:DBFlip:DB$FlipACoin | NoCall$ True | HeadsSubAbility$ DBDamageTarget
 SVar:DBDamageTarget:DB$DealDamage | Defined$ Targeted | NumDmg$ 2
+DeckHints:Type$Kancolle
 
 Oracle:Hexproof\n{G}: You may play an additional land this turn.\n{U}{U}: Torpedo 2. (Target a creature without flying. Flip two coins. Destroyer deals 2 damage to the target for each coin that comes up heads.)

@@ -1,0 +1,12 @@
+Name:Shinkai Wo Kai FS
+ManaCost:1 B B B R
+Types:Creature Shinkai Carrier
+PT:3/7
+K:Deathtouch
+K:Reach
+
+A:AB$ Token | Cost$ B B | TokenAmount$ 2 | TokenScript$ shinkai_fighter | TokenOwner$ You | LegacyImage$ shinkai_fighter | SpellDescription$ Create 2 Shinkai Fighter Black 2/3 token Creature with flying and “T, Fighter deals 4 damage to target creature with flying.”
+A:AB$ Token | Cost$ R R | TokenAmount$ 1 | TokenScript$ shinkai_bomber | TokenOwner$ You | LegacyImage$ shinkai_bomber | SpellDescription$ Create 1 Shinkai Bomber Black Red 4/1 token Creature with flying, haste, and “Bomber can’t block.”
+A:AB$ Regenerate | Cost$ B B B | SpellDescription$ Regenerate CARDNAME.
+
+Oracle:Deathtouch, Reach\n{B}{B}, {T}: Create 1 Shinkai Fighter Black 2/3 token Creature with flying and “{T}, Fighter deals 4 damage to target creature with flying.”\n{R}{R}, {T}: Create 1 Shinkai Bomber Black 4/1 token Creature with flying, haste, and “Bomber can’t block.”\n{B}{B}{B}: Regenerate Shinkai Wo Kai FS (The next time this creature would be destroyed this turn, it isn’t. Instead tap it, remove all damage from it, and remove it from combat.)\n

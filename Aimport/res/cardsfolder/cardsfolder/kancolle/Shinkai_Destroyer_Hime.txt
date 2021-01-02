@@ -1,0 +1,9 @@
+Name:Shinkai Destroyer Hime
+ManaCost:1 B B
+Types:Creature Shinkai Hime DD
+PT:4/2
+K:Undying
+
+A:AB$ DealDamage | Cost$ PayLife<2> | ValidTgts$ Creature,Player,Planeswalker | TgtPrompt$ Select any target | NumDmg$ 1 | SpellDescription$ CARDNAME deals 1 damage to any target.
+
+Oracle:Undying (When this creature dies, if it had no +1/+1 counters on it, return it to the battlefield under its owner’s control with a +1/+1 counter on it.)\nPay 2 life: Deal 1 damage to any target.

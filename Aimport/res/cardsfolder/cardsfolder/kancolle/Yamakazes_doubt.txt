@@ -1,0 +1,14 @@
+Name:Yamakaze's doubt
+ManaCost:2 B
+Types:Sorcery
+K:Suspend:2:B
+
+A:SP$ Discard | Cost$ B | ValidTgts$ Opponent | SubAbility$ DBDiscard |Mode$ RevealYouChoose | DiscardValid$ Card.nonLand | NumCards$ 1 | SpellDescription$ Target opponent reveals their hand. You choose a noncreature from it. That player discards that card.
+SVar:DBDiscard:DB$ Discard | ValidTgts$ Player | NumCards$ 1 | Mode$ TgtChoose | SpellDescription$ Target player discards a card.
+
+
+#TODO: Improve the tutoring logic for the AI. Currently will generally look for the most expensive castable thing in the library (which can, of course, be used to advantage in properly constructed AI decks).
+
+AI:RemoveDeck:Random
+
+Oracle:Target player reveals their hand. You choose a nonland card from it. That player discards that card. Target player discard a card.\nSuspend 2—{B} (Rather than cast this card from your hand, you may pay B and exile it with two time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost.)

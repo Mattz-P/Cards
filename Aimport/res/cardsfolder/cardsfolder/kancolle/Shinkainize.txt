@@ -1,0 +1,14 @@
+Name:Shinkainize
+ManaCost:B B
+Types:Instant
+K:Flashback:B B B
+
+A:SP$ ChangeZone | Cost$ B B | Origin$ Graveyard | Destination$ Battlefield | TgtPrompt$ Choose target creature card in your graveyard | GainControl$ True | ValidTgts$ Creature | SubAbility$ DBLoseLifeYou | TargetMin$ 0 | TargetMax$ 1 | AnimateSubAbility$ Animate | SpellDescription$ Return a target creature cards from your graveyard onto the battlefield.
+SVar:Animate:DB$Animate | Defined$ Remembered | Types$ Shinkai | Colors$ Black | GainControl$ True | Permanent$ True | SpellDescription$ Each of those creatures is a black Shinkai in addition to its other colors and types.
+SVar:DBLoseLifeYou:DB$LoseLife | Defined$ You | LifeAmount$ X | References$ X | SubAbility$ DBPut
+SVar:X:Targeted$CardManaCost
+SVar:DBPut:DB$ChangeZone | Origin$ Stack | Destination$ Library | LibraryPosition$ -1 | SpellDescription$ Put Shinkainize on the bottom of its owner's library.
+
+DeckHints:Ability$Graveyard & Ability$Discard & Type$Shinkai
+
+Oracle:Put target creature card from a graveyard onto the battlefield. That creatures is a black Shinkai in addition to its other colors and types. Put Shinkainize on the bottom of its owner’s library. You lose life equal to its converted mana cost.\nFlashback {B}{B}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)

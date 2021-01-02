@@ -1,0 +1,13 @@
+Name:IJN Akigumo
+ManaCost:W
+Types:Creature Kancolle DD Destroyer
+PT:1/1
+K:Lifelink
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Creature.Other | TriggerZones$ Battlefield | OptionalDecider$ You | Execute$ TrigGainLife | TriggerDescription$ Whenever another creature enters the battlefield, you may gain 1 life.
+SVar:TrigGainLife:DB$GainLife | Defined$ You | LifeAmount$ 1
+
+S:Mode$ Continuous | Affected$ Card.Self | AddPower$ 5 | AddToughness$ 5 | AddKeyword$ Flying | CheckSVar$ X | SVarCompare$ GE30 | Description$ As long as you have 30 or more life, CARDNAME gets +5/+5 and has flying.
+SVar:X:Count$YourLifeTotal
+
+Oracle:Lifelink\nWhenever another creature enters the battlefield, you may gain 1 life.\nAs long as you have 30 or more life, IJN Akigumo gets +5/+5
