@@ -1,0 +1,11 @@
+Name:Ooi, Evermore Loyalty
+ManaCost:no cost
+Types:Legendary Creature Kancolle Light-Cruiser
+Colors:Green blue
+PT:3/3
+
+A:AB$ Repeat | Cost$ T | ValidTgts$ Creature.withoutFlying | TgtPrompt$ Select target creature without flying | RepeatSubAbility$ DBFlip | MaxRepeat$ 5 | SpellDescription$ Target a creature without flying. Flip 6 coins. CARDNAME deals 2 damage to the target for each coin that comes up heads.
+SVar:DBFlip:DB$FlipACoin | NoCall$ True | HeadsSubAbility$ DBDamageTarget
+SVar:DBDamageTarget:DB$DealDamage | Defined$ Targeted | NumDmg$ 2
+
+Oracle:{T}: T: Torpedo 5 (Target a creature without flying. Flip five coins. Destroyer deals 2 damage to the target for each coin that comes up heads.)

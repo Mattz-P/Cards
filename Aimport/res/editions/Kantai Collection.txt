@@ -37,9 +37,9 @@ Booster=9 Common:!fromSheet("AER Planeswalker Decks"), 3 Uncommon:!fromSheet("AE
 25 C IJN Kagerou Class
 26 U Capsizing
 27 M Construction site
-
 28 R Enthusiastic Invitation
 29 R IJN I-58 Kai
+
 30 U IJN Mochizuki Kai
 31 U Search light
 32 R Unusual descovery
@@ -71,11 +71,28 @@ Booster=9 Common:!fromSheet("AER Planeswalker Decks"), 3 Uncommon:!fromSheet("AE
 56 C Sanso Gyorai
 57 C IJN Yamakaze
 58 C Yamakaze's doubt
-59 U IJN Akigumo
+59 U Teitoku's Dream
 
 60 C Shinkainize
+61 C Counterstrike
+62 C IJN Amatsukaze
+63 U IJN Kumano
+64 R Yamato's Latent Power
+65 U IJN Akigumo
+66 U IJN Miyuki
 
-999 U Teitoku's Dream
+#67 M Magical Oak
+#68 M Isolated Mystical Temple
+#69 M Embedded World
+#70 M Unscouted Territory
+#71 M Fugus Colony
+#72 M Land of Great Tower
+#73 R Grand Giant Sequoia
+
+
+
+
+
 
 [tokens]
 suisei
@@ -88,3 +105,4 @@ shiden
 shizai
 u_1_1_destroyer
 LightCruiser
+OoiEvermoreLoyalty

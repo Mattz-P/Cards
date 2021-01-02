@@ -1,0 +1,9 @@
+Name:Yamato's Latent Power
+ManaCost:R R R
+Types:Instant
+SVar:AltCost:Cost$ ExileFromHand<1/Card.Red> | OpponentTurn$ True | Description$ If it's not your turn, you may exile a red card from your hand rather than pay this spell's mana cost.
+
+A:SP$ DamageAll | Cost$ 1 R R | ValidCards$ Creature | NumDmg$ 3 | RememberDamaged$ True | ReplaceDyingDefined$ Remembered | SubAbility$ DBCleanup | SpellDescription$ CARDNAME deals 3 damage to each creature. If a creature dealt damage this way would die this turn, exile it instead.
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+
+Oracle:If it’s not your turn, you may exile a red card from your hand rather than pay this spell’s mana cost.\nYamato’s Latent Power deals 3 damage to each creature. If a creature dealt damage this way would die this turn, exile it instead.

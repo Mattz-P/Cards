@@ -1,0 +1,9 @@
+Name:IJN Amatsukaze
+ManaCost:1 RW
+Types:Creature Kancolle DD Destroyer
+PT:1/2
+K:First strike
+
+A:AB$ Pump | Cost$ RW | NumAtt$ +1 | SpellDescription$ CARDNAME gets +1/+0 until end of turn.
+
+Oracle:First Strike\n{RW}: IJN Amatsukaze gets +1/+0 until the end of the turn.

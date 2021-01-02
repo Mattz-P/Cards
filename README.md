@@ -41,7 +41,8 @@ Note: You can choose your own directory, but you will need to manually change th
 
 ## Updates:
 
-8/21/2020 - MSE: 132 Scripted: 49
+08/21/2020 - MSE: 132 Scripted: 49
+01/02/2021 - MSE: 136 Scripted: 66
 
 ## Card List:
 
@@ -86,7 +87,7 @@ The list is in the order of creation
 37. C Commence in Yasen
 38. R KMS Bismarck
 39. R Emergency Extraction
-.
+
 40. U Industrialization
 41. C Pacify
 42. U IJN Kongo Class
@@ -97,6 +98,29 @@ The list is in the order of creation
 47. C Notify
 48. C Radio Silence
 49. C Hard-Fight Recollection
+
+50. C Kaitai Factory
+51. R Shinkai Wo Kai FS
+52. U Shinkai Destroyer Hime
+53. S Botulinum Red Apple
+54. R Shinkai CV Hime
+55. C Gendai Factory
+56. C Sanso Gyorai
+57. C IJN Yamakaze
+58. C Yamakaze's doubt
+59. U Teitoku's Dream
+
+60. C Shinkainize
+61. C Counterstrike
+62. C IJN Amatsukaze
+63. U IJN Kumano
+64. R Yamato's Latent Power
+65. U IJN Akigumo
+66. U IJN Miyuki
+
+## Card List:
+
+AIPreference:SacCost$Creature.token+powerLE2+toughnessLE2,Creature.cmcLE2+powerLE1+toughnessLE2+inZoneBattlefield
 
 **Convenient Codes in MD Exclusively  for Matt**
 -------

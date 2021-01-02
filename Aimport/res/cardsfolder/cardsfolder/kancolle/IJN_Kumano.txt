@@ -1,0 +1,14 @@
+Name:IJN Kumano
+ManaCost:1 R
+Types:Creature Kancolle CA Heavy-Cruiser
+PT:5/4
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDiscard | TriggerDescription$ When CARDNAME enters the battlefield, discard a card.
+SVar:TrigDiscard:DB$Discard | Defined$ You | NumCards$ 1 | Mode$ TgtChoose
+
+K:CARDNAME doesn't untap during your untap step.
+A:AB$ Untap | Cost$ 1 | PlayerTurn$ True | SpellDescription$ Untap CARDNAME. Activate this ability only during your turn.
+
+DeckHints:Type$Kancolle
+
+Oracle:When IJN Kumano enters the battlefield, discard a card.\nIJN Kumano doesn’t untap during your untap step.\n{1}, Untap IJN Kumano. Activate this ability only during your turn.

@@ -1,0 +1,5 @@
+Name:Shinkai Destoryer
+ManaCost:no cost
+Types:Creature Kancolle Light-Cruiser
+Colors:White Black
+PT:3/3

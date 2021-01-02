@@ -1,0 +1,9 @@
+Name:Counterstrike
+ManaCost:1 RW RW
+Types:Instant
+A:SP$ Charm | Cost$ 1 RW RW | Choices$ DBDamage,DestoryArtifact,DestoryEnchantment | CharmNum$ 1
+SVar:DBDamage:DB$ DealDamage | ValidTgts$ Creature,Player,Planeswalker | TgtPrompt$ Select any target | NumDmg$ 7 | SubAbility$ DBGainLife | SpellDescription$ CARDNAME deals 7 damage to any target.
+SVar:DestoryArtifact:DB$ Destroy | ValidTgts$ Artifact | TgtPrompt$ Select target artifact | SpellDescription$ Destroy target artifact.
+SVar:DestoryEnchantment:DB$ Destroy | ValidTgts$ Enchantment | TgtPrompt$ Select target enchantment | SpellDescription$ Destroy target enchantment.
+AI:RemoveDeck:All
+Oracle:Choose one —\n• Counterstrike deals 7 damage to any target.\n• Destroy target artifact.\n• Destroy target enchantment.
