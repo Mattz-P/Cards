@@ -1,0 +1,6 @@
+Name:Isolated Mystical Temple
+ManaCost:no cost
+Types:Land Island Plains Swamp
+K:ETBReplacement:Other:DBTap
+SVar:DBTap:DB$ Tap | ETB$ True | Defined$ Self | UnlessCost$ PayLife<2> | UnlessPayer$ You | UnlessAI$ Shockland | StackDescription$ enters the battlefield tapped. | SpellDescription$ As CARDNAME enters the battlefield, you may pay 2 life. If you don't, CARDNAME enters the battlefield tapped.
+Oracle:({T}: Add {U}, {W}, or {B}.)\nAs Isolated Mystical Temple enters the battlefield, you may pay 2 life. If you don’t, Isolated Mystical Temple enters the battlefield tapped.

@@ -81,17 +81,13 @@ Booster=9 Common:!fromSheet("AER Planeswalker Decks"), 3 Uncommon:!fromSheet("AE
 65 U IJN Akigumo
 66 U IJN Miyuki
 
-#67 M Magical Oak
-#68 M Isolated Mystical Temple
-#69 M Embedded World
-#70 M Unscouted Territory
-#71 M Fugus Colony
-#72 M Land of Great Tower
-#73 R Grand Giant Sequoia
-
-
-
-
+67 M Magical Oak
+68 M Isolated Mystical Temple
+69 M Embedded World
+70 M Unscouted Territory
+71 M Fugus Colony
+72 M Land of Great Tower
+73 R Grand Giant Sequoia
 
 
 [tokens]

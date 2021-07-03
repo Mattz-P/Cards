@@ -1,0 +1,8 @@
+Name:Grand Giant Sequoia
+ManaCost:no cost
+Types:Legendary Land
+K:indestructible
+A:AB$ Mana | Cost$ T | Produced$ R R | SpellDescription$ Add {R}{R}.
+A:AB$ Mana | Cost$ Sac<1/Permanent> T | Produced$ B | Amount$ X | References$ X | SpellDescription$ Add {B} for each land you control.
+SVar:X:Count$Valid land
+Oracle:Grand Giant Sequoia is indestructible\n{T}: Add {R}{R}.\n{T}, Sacrifice a permanent: Add {R} to your mana pool for each land on the battlefield.

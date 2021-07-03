@@ -118,7 +118,7 @@ The list is in the order of creation
 65. U IJN Akigumo
 66. U IJN Miyuki
 
-## Card List:
+## Script Memo:
 
 AIPreference:SacCost$Creature.token+powerLE2+toughnessLE2,Creature.cmcLE2+powerLE1+toughnessLE2+inZoneBattlefield
 

@@ -1,0 +1,8 @@
+Name:Land of Great Tower
+ManaCost:no cost
+Types:Legendary Land Artifact
+K:ETBReplacement:Other:DBTap
+SVar:DBTap:DB$ Tap | ETB$ True | Defined$ Self | UnlessCost$ PayLife<1> | UnlessPayer$ You | UnlessAI$ Shockland | StackDescription$ enters the battlefield tapped. | SpellDescription$ As CARDNAME enters the battlefield, you may pay 2 life. If you don't, CARDNAME enters the battlefield tapped.
+A:AB$ Mana | Cost$ T | Produced$ Any | SpellDescription$ Add one mana of any color.
+A:SP$ ChangeZone | Cost$ T | ValidTgts$ Permanent | TgtPrompt$ Select target permanent | Origin$ Battlefield | Destination$ Library | LibraryPosition$ 0 | SpellDescription$ Put target permanent on top of its owner's library.
+Oracle:As Land of Great Tower enters the battlefield, you may pay 1 life. If you don’t, Land of Great Tower enters the battlefield tapped.\n{T}: Add one mana of any color.\n{2}, {T}: Put target permanent on top of its owner’s library.

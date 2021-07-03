@@ -1,0 +1,6 @@
+Name:Unscouted Territory
+ManaCost:no cost
+Types:Land Island Mountain Plains
+K:ETBReplacement:Other:DBTap
+SVar:DBTap:DB$ Tap | ETB$ True | Defined$ Self | UnlessCost$ PayLife<2> | UnlessPayer$ You | UnlessAI$ Shockland | StackDescription$ enters the battlefield tapped. | SpellDescription$ As CARDNAME enters the battlefield, you may pay 2 life. If you don't, CARDNAME enters the battlefield tapped.
+Oracle:({T}: Add {U}, {R}, or {W}.)\nAs Unscouted Territory enters the battlefield, you may pay 2 life. If you don’t, Unscouted Territory enters the battlefield tapped.
