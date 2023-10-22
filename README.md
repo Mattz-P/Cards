@@ -2,6 +2,7 @@
 ## Introduction:
 
 This Repo Stores codes for Kantai Collection extension set for Magic the Gathering: Forge. Starting with photoshopping every single picture and using an application on iPhone called CardCreator, the development procedure shifted MSE. The scripting was done with VSCode and batch for injections. Each card in the set is designed under EDH card power standards. Althought, this set can be played as a standalone set, the set isn't meant to be played with standard/pioneer power level cards. Ideally this set finishes with roughly 350 cards fully scripted and fine tuned.
+![image](https://github.com/Mattz-P/Cards/assets/33806410/2e201381-b65e-4590-ae8d-2d946a15cd0a)
 
 ### About forge:
 
